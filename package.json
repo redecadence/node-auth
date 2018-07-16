@@ -1,0 +1,28 @@
+{
+  "name": "node-auth",
+  "version": "0.1.0",
+  "description": "Simple nodejs library for authentication",
+  "main": "index.js",
+  "repository": "git@github.com:redecadence/node-auth.git",
+  "author": "decadence",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src --out-dir dist",
+    "commit": "git-cz"
+  },
+  "devDependencies": {
+    "@atomix/eslint-config": "^6.4.0",
+    "@babel/cli": "^7.0.0-beta.53",
+    "@babel/core": "^7.0.0-beta.53",
+    "@babel/preset-env": "^7.0.0-beta.53",
+    "babel-eslint": "^8.2.6",
+    "commitizen": "^2.10.1",
+    "cz-conventional-changelog": "^2.1.0",
+    "eslint": "^5.1.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
