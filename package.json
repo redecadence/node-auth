@@ -8,7 +8,13 @@
   "license": "MIT",
   "scripts": {
     "build": "babel src --out-dir dist",
-    "commit": "git-cz"
+    "commit": "git-cz",
+    "lint": "eslint src"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
   },
   "devDependencies": {
     "@atomix/eslint-config": "^6.4.0",
@@ -18,7 +24,8 @@
     "babel-eslint": "^8.2.6",
     "commitizen": "^2.10.1",
     "cz-conventional-changelog": "^2.1.0",
-    "eslint": "^5.1.0"
+    "eslint": "^5.1.0",
+    "husky": "^1.0.0-rc.13"
   },
   "config": {
     "commitizen": {
